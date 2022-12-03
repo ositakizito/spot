@@ -100,12 +100,12 @@ section .heading{
     flex-direction: column;
     background-color: var(--blueC);
     padding: 10px 12px;
-    background-image: url("./static/images/sp7.svg");
+    background-image: url("static/images/sp7.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     font-family: 'Jura', sans-serif;
     background-position: bottom right; 
-    height: 60vh;
+    height: 40vh;
 }
 section .heading .headingWrite{
     margin-top: 40px;
@@ -351,7 +351,7 @@ section .headingBlog{
     flex-direction: column;
     background-color: var(--blueC);
     padding: 10px 12px;
-    background-image: url("./static/images/sp3.svg");
+    background-image: url("static/images/sp3.svg");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: bottom right; 
