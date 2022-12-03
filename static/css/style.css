@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Lora:ital@1&family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+ :root{
+    --blueC: #071947;
+    --whiteC: #ffffff;
+    --orangeC: #e96a37;
+    --grayC: gray;
+    --lightGray: #f0f0f0;
+    --milk: #e4e8f1;
+  } 
+section.navbar{
+    position: sticky;
+    background-color: var(--blueC);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+section.navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+section.navbar .container .name_logo a img{
+    cursor: pointer;
+    top: 0;
+    margin-left: -30px;
+    margin-top: -22px;
+    position: absolute;
+  }
+
+section.navbar .container .menu_click{
+    /* padding: 5px 12px; */
+    color: var(--whiteC);
+    margin-top: 17.7px;
+    margin-right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: var(--orangeC);
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    padding: 8px 8px;
+    /* border: 1px solid red; */
+}
+section.navbar .container .menu_click:hover{
+    color: var(--whiteC);
+}
+.menutarget{
+    display: none;
+    margin-right: 10px;
+    margin-top: 11px;
+    width: 70%;
+    height: 89vh;
+    text-align: center;
+    background-color: var(--lightGray);
+    position: absolute;
+   
+    
+}
+.menutarget .content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+
+}
+.menutarget .content .artist :hover{
+    background-color: var(--milk);
+    color: var(--blueC);
+}
+
+.menutarget .content  div.artist{
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.menutarget .content .artist a{
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 12px;
+    display: flex;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: var(--blueC);
+    font-family: 'jura', sans-serif;
+    
+}
+
+section .heading{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blueC);
+    padding: 10px 12px;
+    background-image: url("/static/images/sp7.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    font-family: 'Jura', sans-serif;
+    background-position: bottom right; 
+    height: 60vh;
+}
+section .heading .headingWrite{
+    margin-top: 40px;
+    color: var(--whiteC);
+}
+
+section .heading .headingWrite p{
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    
+}
+section .heading .headingbutton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: var(--whiteC);
+}
+section .heading .headRequest{
+  border: 1px solid var(--orangeC);
+  padding: 10px 8px;
+  border-radius: 5px;
+  color: var(--whiteC);
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+section .heading .headRequest.Rbtn{
+  background-color: var(--orangeC);
+}
+
+section .heading2{
+ background-color: var(--milk);
+ padding: 45px 10px;
+ font-family: 'Lora', serif;
+}
+section .heading2 .headingWrite2{
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+section .heading2 .headingWrite2 p{
+    font-weight: 5;
+    margin-top: 10px;
+    color: var(--grayC);
+    
+}
+section .heading2 .headingbutton2{
+    background-color: var(--whiteC);
+    margin: 10px;
+    padding: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0), 0 6px 20px 0  rgba(0,0,0,0.15);
+}
+section .heading2 .a img{
+     width: 100%;
+     border-radius: 5px;
+     margin: 5px;
+}
+section .heading2 .headRequest2 .headcont{
+     text-decoration: none;
+     color: var(--grayC);
+     font-family: 'jura', sans-serif;
+
+}
+section .heading2 .headRequest2 .headcontent a{
+     text-decoration: none;
+     color: var(--grayC);
+     font-family: 'Poppins', sans-serif;
+
+}
+section .heading2 .headingbutton2 .amount{
+    text-align: right;
+    /* font-family: ; */
+    color: var(--grayC);
+}
+
+/* third */
+section .heading2 .headingWrite3{
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+section .heading2 .headingWrite3 h3{
+    font-weight: 900;
+}
+
+section .heading2 .headingbutton3{
+    padding: 8px 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0), 0 6px 20px 0  rgba(0,0,0,0.15);
+}
+section .heading2 .headRequest3 img{
+     width: 100%;
+     margin-bottom: 5px;
+     padding: 5px 6px;
+}
+section .heading2 .headRequest3 p a{
+    text-decoration: none;
+    color: var(--blueC);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+section .heading2 .headRequest2 .headpara{
+    font-size: 130%;
+    color: var(--grayC);
+}
+
+section .heading2 .headRequest2 .headcontent{
+    font-size: 100%;
+     height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+section .heading2 .headRequestBlog .headpara{
+    font-size: 130%;
+    color: var(--grayC);
+}
+section .heading2 .headRequestBlog .headcontent{
+    font-size: 100%;
+     height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+div.line{
+    content: '';
+    position: relative;
+    width: 30px;
+    padding: 2px 2px;
+    margin-top: 10px;
+    background-color: var(--blueC);
+}
+/* 
+blog uses heading 2 and heading4*/
+section .heading4{
+    background-color: var(--whiteC);
+    padding: 45px 10px;
+    font-family: 'jura', sans-serif;
+    
+   }
+   section .heading4 .headingbutton4{
+       display: flex;
+       font-size: 12px;
+       margin-top: 10px;
+       padding: 8px 12px;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0), 0 6px 20px 0  rgba(0,0,0,0.15);
+   
+   }
+   section .heading4 .headRequest4 img{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+   }
+   section .heading4 .headRequest4 p a{
+    text-decoration: none;
+    color: var(--grayC);
+       
+   }
+   section .heading4 .headRequest4 p{
+    color: var(--grayC);
+       
+   }
+   section .heading2 .headingWrite2 h3{
+       font-weight: 900;
+   }
+
+   section .heading2 .headRequest2 img{
+        width: 100%;
+   }
+   section .heading2 .headRequest2 a{
+        text-decoration: none;
+        color: var(--blueC);
+        font-weight: 900;
+   }
+   section .heading2 .headingbutton3 .time{
+       text-align: left;
+       font-size: 12px;
+       padding: 2px 5px;
+       border: 1px solid var(--orangeC);
+       width: 90px;
+       margin-bottom: 2px;
+   }
+   section .heading2 .headingbutton3 {
+      margin-top: 10px;
+      padding: 10px;
+   }
+   section .heading2 .headingbutton3 p{
+       text-align: left;
+       font-size: 15px;
+   }
+   section .heading2 .headRequest2 p a{
+       text-decoration: none;
+       color: var(--grayC);
+   }
+   /* Single blog  view */
+
+   .heading2 .formInput form{
+     display: flex;    
+     flex-direction: column;
+     margin-top: 15px;
+   
+   }
+   .heading2 .formInput form .inputStyle{
+    margin: 5px;
+    padding: 10px 12px;
+    border: none;
+    outline: none;
+    font-family: 'Jura', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0), 0 6px 20px 0  rgba(0,0,0,0.15);
+   }
+   .heading2 .formInput form .inputStyle:focus{
+    border: 1px solid var(--blueC);
+    background-color: var(--milk);
+    color: var(--grayC);
+   }
+   .heading2 .formInput form .inputStyle.btn:focus{
+    border: none;
+   }
+   .heading2 .formInput form .inputStyle.btn{
+     background-color: var(--blueC);
+     color:var(--lightGray);
+     font-size: 12PX;
+     width: 150px;
+     text-align: center;
+   }
+   .poster span.iconn i{
+    margin: 5px;
+    font-size: 170%;
+   }
+   .poster{
+    font-family: 'jura', sans-serif;
+   }
+
+  /* contactlist */
+   section .heading4 .headRequest4.sv img{
+        width: 15px;
+        height: 15px;
+        padding: 2px 5px;
+   }
+/* About section */
+section .headingBlog{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blueC);
+    padding: 10px 12px;
+    background-image: url("/static/images/sp3.svg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: bottom right; 
+    height: 55vh;
+
+}
+section .headingBlog .headrole{
+    color: #e96a37;letter-spacing: 2px; font-size: 200%;
+    font-family: 'Jura', sans-serif;
+}
+/* Blog  */
+
+/* Footer contents */
+.footer{
+    background-color: var(--lightGray);
+    padding: 15px 12px;
+}                       
+.footer .footer-content {
+   display: flex;
+   justify-content: space-around;
+}
+.footer .footer-content .about a{
+   text-decoration: none;
+   color: var(--grayC);
+   padding: 10px 12px;
+   border-radius: 5px;
+}
+.footer .footer-content .about a:hover{
+   background-color: var(--orangeC);
+   transition: ease-in-out;
+   color: var(--milk);
+}
+
