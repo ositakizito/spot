@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Lora:ital@1&family=Poppins:wght@100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +15,6 @@
 section.navbar{
     position: sticky;
     background-color: var(--blueC);
-    position: sticky;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -28,13 +28,12 @@ section.navbar .container{
 section.navbar .container .name_logo a img{
     cursor: pointer;
     top: 0;
-    margin-left: -30px;
-    margin-top: -22px;
-    position: absolute;
+    margin-left: -5px;
+    margin-top: 17px;
+    position: absolute; 
   }
 
 section.navbar .container .menu_click{
-    /* padding: 5px 12px; */
     color: var(--whiteC);
     margin-top: 17.7px;
     margin-right: 15px;
@@ -46,42 +45,39 @@ section.navbar .container .menu_click{
     height: 25px;
     width: 25px;
     padding: 8px 8px;
-    /* border: 1px solid red; */
+ 
 }
 section.navbar .container .menu_click:hover{
     color: var(--whiteC);
 }
-.menutarget{
+section.navbar .container .menutarget{
     display: none;
     margin-right: 10px;
-    margin-top: 11px;
-    width: 70%;
-    height: 89vh;
+    margin-top: 4.4em;
+    width: 60%;
+    height: 100vh;
     text-align: center;
     background-color: var(--lightGray);
     position: absolute;
-   
     
 }
-.menutarget .content{
+section.navbar .container .menutarget .content{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    
-
 }
-.menutarget .content .artist :hover{
+section.navbar .container .menutarget .content .artist :hover{
     background-color: var(--milk);
     color: var(--blueC);
 }
 
-.menutarget .content  div.artist{
-    margin: 10px;
+section.navbar .container .menutarget .content  div.artist{
+    margin: 3px 0;
     display: flex;
     justify-content: left;
     width: 100%;
 }
-.menutarget .content .artist a{
+section.navbar .container .menutarget .content .artist a{
     text-decoration: none;
     width: 100%;
     padding: 10px 12px;
@@ -92,51 +88,55 @@ section.navbar .container .menu_click:hover{
     font-size: 12px;
     color: var(--blueC);
     font-family: 'jura', sans-serif;
-    
 }
 
 section .heading{
     display: flex;
     flex-direction: column;
-    background-color: var(--blueC);
     padding: 10px 12px;
-    background-image: url("static/images/sp7.svg");
-    background-repeat: no-repeat;
-    background-size: 60%;
+    background-color: var(--blueC);
     font-family: 'Jura', sans-serif;
-    background-position: bottom right; 
-    height: 40vh;
+    height: 70vh;
+}
+section .heading img{
+  position: absolute;
+  width: 50%;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 45px;
+    
 }
 section .heading .headingWrite{
     margin-top: 40px;
     color: var(--whiteC);
+    z-index: 1;
 }
 
 section .heading .headingWrite p{
     font-size: 12px;
     margin-top: 10px;
+    margin-bottom: 10px;
     letter-spacing: 2px;
-    
 }
 section .heading .headingbutton{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     color: var(--whiteC);
+    z-index: 1;
 }
-section .heading .headRequest{
-  border: 1px solid var(--orangeC);
-  padding: 10px 8px;
-  border-radius: 5px;
+section .heading .headRequest a{
+  padding: 10px 12px;
   color: var(--whiteC);
   font-size: 10px;
+  border-radius: 5px;
   text-align: center;
   letter-spacing: 2px;
 }
-section .heading .headRequest.Rbtn{
+
+section .heading .headRequest.Rbtn a{
   background-color: var(--orangeC);
 }
-
 section .heading2{
  background-color: var(--milk);
  padding: 45px 10px;
@@ -145,19 +145,16 @@ section .heading2{
 section .heading2 .headingWrite2{
     margin-bottom: 20px;
     text-align: center;
-    
 }
-
 section .heading2 .headingWrite2 p{
     font-weight: 5;
     margin-top: 10px;
     color: var(--grayC);
-    
 }
 section .heading2 .headingbutton2{
     background-color: var(--whiteC);
-    margin: 10px;
-    padding: 18px;
+    margin: 8px 0;
+    padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0), 0 6px 20px 0  rgba(0,0,0,0.15);
 }
 section .heading2 .a img{
@@ -169,30 +166,28 @@ section .heading2 .headRequest2 .headcont{
      text-decoration: none;
      color: var(--grayC);
      font-family: 'jura', sans-serif;
-
 }
 section .heading2 .headRequest2 .headcontent a{
      text-decoration: none;
      color: var(--grayC);
      font-family: 'Poppins', sans-serif;
-
 }
 section .heading2 .headingbutton2 .amount{
     text-align: right;
-    /* font-family: ; */
     color: var(--grayC);
 }
-
 /* third */
 section .heading2 .headingWrite3{
     margin-bottom: 20px;
     text-align: center;
     width: 100%;
 }
-section .heading2 .headingWrite3 h3{
+section .heading2 .headingWrite3 span.blog{
     font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 200%;
+    color: var(--grayC);
 }
-
 section .heading2 .headingbutton3{
     padding: 8px 10px;
     margin-top: 15px;
@@ -210,13 +205,13 @@ section .heading2 .headRequest3 p a{
     margin-bottom: 10px;
 }
 section .heading2 .headRequest2 .headpara{
-    font-size: 130%;
+    font-size: 200%;
     color: var(--grayC);
 }
 
 section .heading2 .headRequest2 .headcontent{
     font-size: 100%;
-     height: 50px;
+    height: 50px;
     overflow: hidden;
     text-overflow: ellipsis; 
 }
@@ -224,12 +219,12 @@ section .heading2 .headRequestBlog .headpara{
     font-size: 130%;
     color: var(--grayC);
 }
-section .heading2 .headRequestBlog .headcontent{
+/* section .heading2 .headRequestBlog .headcontent{
     font-size: 100%;
      height: 70px;
     overflow: hidden;
     text-overflow: ellipsis; 
-}
+} */
 div.line{
     content: '';
     position: relative;
@@ -246,60 +241,78 @@ section .heading4{
     font-family: 'jura', sans-serif;
     
    }
-   section .heading4 .headingbutton4{
+section .heading4 .headingbutton4{
        display: flex;
        font-size: 12px;
        margin-top: 10px;
        padding: 8px 12px;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0), 0 6px 20px 0  rgba(0,0,0,0.15);
-   
-   }
+}
    section .heading4 .headRequest4 img{
         width: 100px;
         height: 100px;
         margin-right: 10px;
-   }
-   section .heading4 .headRequest4 p a{
+}
+section .heading4 .headRequest4 p a{
     text-decoration: none;
     color: var(--grayC);
-       
-   }
-   section .heading4 .headRequest4 p{
+}
+section .heading4 .headRequest4 p{
     color: var(--grayC);
-       
-   }
-   section .heading2 .headingWrite2 h3{
+}
+   section .heading2 .headingWrite2 span.pdc{
        font-weight: 900;
-   }
-
-   section .heading2 .headRequest2 img{
+}
+section .heading2 .headRequest2 img{
         width: 100%;
-   }
-   section .heading2 .headRequest2 a{
+}
+section .heading2 .headingWrite2 span.pdc{
+    letter-spacing: 2px; 
+    font-size: 200%;
+    color: var(--grayC);
+}
+
+section .heading2 .headRequest2 p a{
         text-decoration: none;
         color: var(--blueC);
         font-weight: 900;
-   }
-   section .heading2 .headingbutton3 .time{
+}
+section .heading2 .headingbutton3 .time{
        text-align: left;
        font-size: 12px;
        padding: 2px 5px;
        border: 1px solid var(--orangeC);
        width: 90px;
        margin-bottom: 2px;
-   }
-   section .heading2 .headingbutton3 {
+}
+section .heading2 .headingbutton3 {
       margin-top: 10px;
       padding: 10px;
-   }
-   section .heading2 .headingbutton3 p{
+}
+section .heading2 .headingbutton3 p{
        text-align: left;
        font-size: 15px;
-   }
-   section .heading2 .headRequest2 p a{
+}
+section .heading2 .headRequest2 p a{
        text-decoration: none;
        color: var(--grayC);
-   }
+}
+section .heading2 .headingbutton3 .headsingle{
+    display: flex; 
+    justify-content: space-between; 
+    color: gray;
+    font-size: 17px;;
+}
+section .heading2 .socialhands {
+    display: flex; 
+    justify-content: 
+    space-between; 
+    color: var(--grayC);
+    font-size: 12px;
+    font-weight: 10;
+    cursor: pointer;
+}
+
    /* Single blog  view */
 
    .heading2 .formInput form{
@@ -307,56 +320,70 @@ section .heading4{
      flex-direction: column;
      margin-top: 15px;
    
-   }
-   .heading2 .formInput form .inputStyle{
+}
+section  .heading2 .formInput form .inputStyle{
     margin: 5px;
-    padding: 10px 12px;
+    padding: 15px 12px;
     border: none;
     outline: none;
     font-family: 'Jura', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.0), 0 6px 20px 0  rgba(0,0,0,0.15);
-   }
+}
    .heading2 .formInput form .inputStyle:focus{
     border: 1px solid var(--blueC);
     background-color: var(--milk);
     color: var(--grayC);
-   }
+}
    .heading2 .formInput form .inputStyle.btn:focus{
     border: none;
-   }
-   .heading2 .formInput form .inputStyle.btn{
+}
+   section .heading2 .formInput form .inputStyle.btn{
      background-color: var(--blueC);
      color:var(--lightGray);
      font-size: 12PX;
      width: 150px;
      text-align: center;
-   }
-   .poster span.iconn i{
+     cursor: pointer;
+     height: 50px;
+     border-radius: 6px;
+}
+
+   /* End of login and registration */
+
+.poster span.iconn i{
     margin: 5px;
     font-size: 170%;
-   }
-   .poster{
+}
+.poster{
     font-family: 'jura', sans-serif;
-   }
+    color: var(--grayC);
+}
+.poster span.iconn a{
+   color: var(--grayC);
+}
 
   /* contactlist */
-   section .heading4 .headRequest4.sv img{
+section .heading4 .headRequest4.sv img{
         width: 15px;
         height: 15px;
         padding: 2px 5px;
-   }
+}
 /* About section */
 section .headingBlog{
     display: flex;
     flex-direction: column;
     background-color: var(--blueC);
     padding: 10px 12px;
-    background-image: url("static/images/sp3.svg");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: bottom right; 
     height: 55vh;
 
+}
+section .headingBlog img{
+    position: absolute;
+    width: 50%;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 100px;
+    bottom: 45px;
 }
 section .headingBlog .headrole{
     color: #e96a37;letter-spacing: 2px; font-size: 200%;
@@ -384,4 +411,193 @@ section .headingBlog .headrole{
    transition: ease-in-out;
    color: var(--milk);
 }
+/* Media responsive mode */
+@media only screen and (min-width: 1025px){
+    /* section.navbar{
+        
+    } */
+section.navbar .container img{
+        margin-top: 0;
+}
+    section.navbar .container{
+       width: 80%;
+       margin: 0 auto;
+       height: 68px; 
+}
+    section.navbar .container .menutarget{
+    display: block;
+    background-color: unset;
+    position: relative;
+    height: 0;
+    top: -25px;
+    
+}
+section.navbar .container .menu_click{
+   display: none;
+}
+   section.navbar .container .menutarget .content{
+    display:  flex;
+    flex-direction: row;
+    position: absolute;
+    float: right;
+    margin-top: -30px;
+    top: 0;
+    font-size: 12px;
+    float: right;
+}
 
+section.navbar .container .menutarget .content .artist a{
+    color: var(--milk);
+}
+/* end of navigation desktop mode */
+/* begin of heading section first */
+section .heading img{
+  width: 20%;
+  bottom: 75px;
+}
+section .headingBlog img{
+  width: 20%;
+  bottom: 75px;
+}
+section .heading .headingWrite{
+    margin-top: 40px;
+    color: var(--whiteC);
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 250%;
+    margin-bottom: 10px;
+}
+section .heading .headingWrite p{
+    font-size: 50%;
+}
+section .heading .headingbutton{
+   padding: 10px;
+   text-align: center;
+   width: 80%;
+   margin: 0 auto;
+   display: inline-flex;
+   justify-content: unset;
+   
+}
+
+section .heading .headRequest {
+  margin: 0 8px 0 0;
+} 
+
+section .heading .headRequest a{
+  padding: 20px ;
+} 
+ 
+/* ends */
+
+/* Login and signup */
+.heading2 .formInput form{
+    width: 35%;
+    margin: 0 auto;
+    padding: 10px 8px;
+  }
+  .heading2 .formInput form .inputStyle{
+   padding: 18px 12px;
+  }
+/* Ends Login and signup */
+  
+/* courses desktop view mode */
+
+section .heading2 .headingWrite2{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+section .heading2 .headingWrite2 span.pdc{
+    font-size: 400%;
+}
+section .heading2 .headingWrite2 p{
+   font-size: 200%;
+}
+section .heading2 .headingbutton2{
+    width: 80%;
+    margin: 0 auto;
+}
+section .heading2 .flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+section .heading2 .flex-container .headingbutton2{
+   margin:10px auto;
+   width: 310px;
+   text-align: center;
+}
+section .heading2 .flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+section .heading2 .flex-container .headingbutton3{
+   margin:10px auto;
+   width: 310px;
+   text-align: center;
+}
+section .heading2 .headingWrite3 span.blog{
+    font-size: 400%;
+}
+
+section .heading2 .headRequest2 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+section .heading2 .headingbutton3 .headsingle{
+    width: 80%;
+    margin: 0 auto;
+}
+section .heading2 .headingbutton3 .time{
+    margin-left: 30px;
+  
+}
+section .heading2  .poster span.iconn{
+    font-size: 150%;
+}
+section .heading2 .headRequest2 img{
+   width: 100%;
+   height: 50vh;
+   margin: 0 auto;
+
+}
+section .heading2 .headRequest2 {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+section .heading2 .headRequest2 .headpara{
+    font-size: 200%;
+    color: var(--grayC);
+}
+
+section .heading2 .headRequest2 .headcontent{
+   display: flex;
+   flex-direction: column;
+   height: 100px;
+}
+section .heading2 .headRequest2 .headpara{
+    font-size: 100%;
+    color: var(--grayC);
+}
+/* section .heading2 .headingbutton3 .line{
+  margin-left: 130px;
+} */
+section .heading2  .poster{
+    width: 80%;
+    margin: 0 auto;
+}
+section .heading2  .poster img{
+  width: 100px;
+  height: 100px;
+}
+}
